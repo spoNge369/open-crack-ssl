@@ -1,3 +1,8 @@
+# Requirements
+
+`sudo cpan install Smart::Comments Getopt::Long`
+
+
 # open-crack-ssl
 
 Usage: perl opensslCrack -w /path/to/wordlist -d data_encrypted
