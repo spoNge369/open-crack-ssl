@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+# open crack ssl >:) -- 2022-Feb-26 spoNge369
+# For best performance, use a 1000-word dictionary.
 
 use warnings;
 use strict;
@@ -41,15 +43,11 @@ LOOP: foreach my $cipher ( @ciphers ) { ### Progreso [===>[%]   ]  done.
 
 		}
 
-
-
 	}
 
 	print "\tCifrado: $cipher\n";
-
+	
 }
 
 close $fh;
 exit 0;
-
-
