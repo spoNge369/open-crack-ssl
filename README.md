@@ -1,6 +1,6 @@
 # Requirements
 
-`sudo cpan install Smart::Comments Getopt::Long`
+`sudo cpan Smart::Comments Getopt::Long`
 
 
 # open-crack-ssl
