@@ -5,7 +5,7 @@
 
 # open-crack-ssl
 
-Usage: perl opensslCrack -w /path/to/wordlist -d data_encrypted
+Usage: perl opensslCrack.pl -w /path/to/wordlist -d data_encrypted
 
 
 # Supported ciphers:
