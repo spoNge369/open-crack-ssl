@@ -33,19 +33,18 @@ LOOP: foreach my $cipher ( @ciphers ) { ### Progreso [===>[%]   ]  done.
 
 		foreach my $password ( @diccionario ) {
 		
-		my $command = `openssl '$cipher' -d -in '$data_enc' -out decrypted.txt -pass pass:'$password' > /dev/null 2>&1`;
-		my $decrypted = "./decrypted.txt";
+			my $command = `openssl '$cipher' -d -in '$data_enc' -out decrypted.txt -pass pass:'$password' > /dev/null 2>&1`;
+			my $decrypted = "./decrypted.txt";
 	
-		if ( ! $? and -T $decrypted and ! -B $decrypted ) { 
-			system 'clear';	
-			print BOLD GREEN, "\n\n[*] Password:", BOLD YELLOW, " '$password'\n", BOLD GREEN ,"[*] Cifrado:", BLUE, " \U'$cipher'\n" , RESET; 
-			last LOOP;
+			if ( ! $? and -T $decrypted and ! -B $decrypted ) { 
+				system 'clear';	
+				print BOLD GREEN, "\n\n[*] Password:", BOLD YELLOW, " '$password'\n", BOLD GREEN ,"[*] Cifrado:", BLUE, " \U'$cipher'\n" , RESET; 
+				last LOOP;
 
 		}
+      }
 
-	}
-
-	print "\tCifrado: $cipher\n";
+      print "\tCifrado: $cipher\n";
 	
 }
 
